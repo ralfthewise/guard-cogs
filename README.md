@@ -43,16 +43,16 @@ end
 
 ``` ruby
 compile     => ['app.coffee', 'assets/vendor/vendor.js' => 'vendor/deps.js'] # Array of files to generate in "dest".  Use a hash if you want generated filename
-                                                                             # to be different than the source filename
-dest        => 'public/javascripts'                                          # Output folder
-asset_paths => ['assets/scripts', 'assets/vendor/scripts']                   # Array of folders containing assets
+                                                                             # to be different than the source filename. Defaults to all watched files.
+dest        => 'public/javascripts'                                          # Output folder. Defaults to '.'
+asset_paths => ['assets/scripts', 'assets/vendor/scripts']                   # Array of folders containing assets.  Defaults to ['.']
 minify      => true                                                          # Minify generated files (uglifier for javascript, yui-compressor for stylesheets)
 ```
 
 ## License
 (The MIT License)
 
-Copyright (c) 2011-2012 Aaron Cruz
+Copyright (c) 2014 Tim Garton
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
