@@ -1,0 +1,7 @@
+guard 'cogs', compile: ['app.coffee'], dest: 'public/javascripts', asset_paths: ['assets/scripts', 'assets/vendor/scripts'] do
+  watch(%r{^assets/.+\.(js|coffee)$})
+end
+
+guard 'cogs', compile: ['app.scss'], dest: 'public/stylesheets', asset_paths: ['assets/stylesheets', 'assets/vendor/stylesheets'] do
+  watch(%r{^assets/.+\.(css|scss)$})
+end
