@@ -5,13 +5,7 @@ Guard plugin that uses sprockets to package your coffeescript, javascript, sass,
 
 ## Install
 
-Please be sure to have [Guard](https://github.com/guard/guard) installed before continuing.
-
-Install the gem:
-
-```
-$ gem install guard-cogs
-```
+Read up on [Guard](https://github.com/guard/guard) before continuing.
 
 Add it to your Gemfile:
 
@@ -21,10 +15,16 @@ group :development, :test do
 end
 ```
 
+Install the gem:
+
+```
+$ bundle install --path vendor/bundle --binstubs vendor/bundle/bin --without production
+```
+
 Add guard definition to your Guardfile by running this command:
 
 ```
-$ guard init cogs
+$ bundle exec guard init cogs
 ```
 
 ## Usage
