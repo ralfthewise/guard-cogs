@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['garton.tim@gmail.com']
   spec.summary       = 'Guard gem for sprockets'
   spec.description   = 'Guard::Cogs packages your coffeescript, javascript, sass, and css.'
-  spec.homepage      = 'https://rubygems.org/gems/guard-cogs'
+  spec.homepage      = 'https://github.com/ralfthewise/guard-cogs'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")

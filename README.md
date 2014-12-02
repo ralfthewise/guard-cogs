@@ -47,6 +47,7 @@ compile     => ['app.coffee', 'assets/vendor/vendor.js' => 'vendor/deps.js'] # A
 dest        => 'public/javascripts'                                          # Output folder. Defaults to '.'
 asset_paths => ['assets/scripts', 'assets/vendor/scripts']                   # Array of folders containing assets.  Defaults to ['.']
 minify      => true                                                          # Minify generated files (uglifier for javascript, yui-compressor for stylesheets)
+sprockets   => ::Sprockets::Environment.new                                  # Sprockets environment.  Defaults to ::Sprockets::Environment.new
 ```
 
 ## License
