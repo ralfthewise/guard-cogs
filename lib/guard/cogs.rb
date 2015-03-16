@@ -1,11 +1,11 @@
 require 'guard'
-require 'guard/guard'
+require 'guard/plugin'
 require 'sprockets'
 
 module Guard
-  class Cogs < Guard
+  class Cogs < Plugin
 
-    def initialize(watchers = [], options = {})
+    def initialize(options = {})
       super
 
       @compile = options[:compile]
